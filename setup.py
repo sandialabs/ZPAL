@@ -4,9 +4,6 @@ from setuptools import setup, find_packages
 with open("README.md", "r") as f:
     readme = f.read()
 
-
-__author__ = "Simon Reeser <streese@sandia.gov>"
-
 requires = [
     'requests>=2.27.1',
     'setuptools>=39.2.0'
@@ -18,10 +15,8 @@ setup(
     packages=find_packages(where='src'),
     package_dir={"":"src"},
         test_suite="test_base",
-    author="Sarah Ashley, Roscoe Hill, Francis Oroyan, Simon Reeser",
-    author_email="snashle@sandia.gov, roshill@sandia.gov, fdoroyan@sandia.gov, streese@sandia.gov",
     description="ZPE API Abstraction Layer",
-    license="Apache 2.0",
+    license="MIT",
     long_description=readme,
     long_description_content_type="text/markdown",
     classifiers=[
